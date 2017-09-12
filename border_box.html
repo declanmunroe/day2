@@ -13,6 +13,7 @@
 				width:960px;	/*to center an element it must have a fixed width*/
 				border-radius: 10px;
 				padding: 10px;
+				padding-top:190px;
 				font-size: 0; /* font-size:0 removes problem spaceing issue for inline-block*/
 			}
 			.box{
@@ -54,7 +55,10 @@
 			    box-sizing: border-box;
 				padding: 40px 40px 40px 40px;
 			    text-align:center;
-				position:relative;
+				position:fixed;
+				
+				z-index:100;
+				width:100%;
 			}
 			
 			#footer
@@ -83,11 +87,14 @@
 		</style>
 	</head>
 	<body>
+	    
+		<div id="header" class="box">
+			     <h1>Header</h1>
+		</div>
+			
 		<div id="container">
 			
-			<div id="header" class="box">
-			     <h1>Header</h1>
-			</div>
+			
 			<div id="sidebar" class="box">
 			    <h2>Sidebar</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -95,17 +102,31 @@
 			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
 			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
 			ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+			<br>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+			ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
 			</p>
-			<img src="images/arrow.png" id="linkToTop2">
+			<a href="#"><img src="images/arrow.png" id="linkToTop2"></a>
 			</div>
+			
 			<div id="content" class="box">
 			    <h2>Content</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
 			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
 			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
 			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-			ut aliquip ex ea commodo consequat. Duis autem vel eum iriure</p>
-			<img src="images/arrow.png" id="linkToTop">
+			ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+			<br>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+			ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+			</p>
+			<a href="#"><img src="images/arrow.png" id="linkToTop"></a>
 			</div>
 			<div id="footer" class="box">
 			    <h2>Footer</h2>
