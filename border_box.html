@@ -33,14 +33,50 @@
 				width: 475px;
 				margin-right: 5px;
 				box-sizing: border-box;
-				padding: 0 40px 0 40px;
+				padding: 40px 40px 40px 40px;
+				text-align:center;
+				position:relative;
+				
+				
 			}
 			#content{
 				display: inline-block;
 				width: 475px;
 				margin-left: 5px;
 				box-sizing: border-box;
-				padding: 0 40px 0 40px;
+				padding: 40px 40px 40px 40px;
+			    text-align:center;
+				position:relative;
+			}
+			
+			#header
+			{
+			    box-sizing: border-box;
+				padding: 40px 40px 40px 40px;
+			    text-align:center;
+				position:relative;
+			}
+			
+			#footer
+			{
+			    box-sizing: border-box;
+				padding: 40px 40px 40px 40px;
+			    text-align:center;
+				position:relative;
+			}
+			
+			#linkToTop
+			{
+			    position: absolute;
+			    bottom: 0px;
+			    right: -80px;
+			}
+			
+			#linkToTop2
+			{
+			    position: absolute;
+			    bottom: 0px;
+			    left: -80px;
 			}
 
 
@@ -49,21 +85,30 @@
 	<body>
 		<div id="container">
 			
-			<div id="header" class="box"> <h1>Header</h1>
-			</div><div id="sidebar" class="box"><h2>Sidebar</h2>
+			<div id="header" class="box">
+			     <h1>Header</h1>
+			</div>
+			<div id="sidebar" class="box">
+			    <h2>Sidebar</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
 			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
 			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
 			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
 			ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
 			</p>
-			</div><div id="content" class="box"><h2>Content</h2>
+			<img src="images/arrow.png" id="linkToTop2">
+			</div>
+			<div id="content" class="box">
+			    <h2>Content</h2>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
 			sed diam nonummy nibh euismod tincidunt ut laoreet dolore
 			magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
 			quis nostrud exerci tation ullamcorper suscipit lobortis nisl
 			ut aliquip ex ea commodo consequat. Duis autem vel eum iriure</p>
-			</div><div id="footer" class="box"><h2>Footer</h2>
+			<img src="images/arrow.png" id="linkToTop">
+			</div>
+			<div id="footer" class="box">
+			    <h2>Footer</h2>
 			</div>
 
 		</div>
